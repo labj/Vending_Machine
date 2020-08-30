@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
+    <ProjectGuid>{C7DF1965-A841-4C98-9FE2-261858AD544B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>VendingMachine</RootNamespace>
+    <AssemblyName>VendingMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|anycpu' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|anycpu' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VMachine.cs" />
+    <Compile Include="Drink.cs" />
+    <Compile Include="Snack.cs" />
+    <Compile Include="Food.cs" />
+    <Compile Include="BaseVMClass.cs" />
+    <Compile Include="CocaCola.cs" />
+    <Compile Include="SparklingWater.cs" />
+    <Compile Include="OrangeJuice.cs" />
+    <Compile Include="Japp.cs" />
+    <Compile Include="Biscuits.cs" />
+    <Compile Include="Chips.cs" />
+    <Compile Include="HamSandwich.cs" />
+    <Compile Include="CheeseSandwich.cs" />
+    <Compile Include="EggSandwich.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
